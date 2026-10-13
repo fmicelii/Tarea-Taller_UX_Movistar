@@ -1,26 +1,84 @@
 BENCHMARK UX — SUPERCOOK
 
-[DATOS GENERALES DE LA PRUEBA]
-Dispositivo / Sistema Operativo: 
-Punto de entrada (App Store / Web / etc.): 
-Tipo de acceso (Gratis / Freemium / Suscripción / Requiere registro): 
+Dispositivo / sistema operativo: iOS
+Punto de entrada: App Store
+Conexión / condiciones relevantes: Acceso totalmente gratuito. Disponible en muchos idiomas, incluido el español. La app presenta una sección de favoritos que requiere cuenta de usuario; el flujo principal puede utilizarse sin registro para la carga de ingredientes y la búsqueda de recetas.
 
-[ZONA DE VOLCADO LIBRE / ANOTACIONES EN CRUDO]
-(Arrojá acá todo lo que fuiste viendo y experimentando sin preocuparte por el formato técnico:
-- ¿Cómo es el inicio / onboarding?
-- ¿Cómo se cargan los ingredientes que tenés en casa? (despensa, buscador, categorías, voz, etc.)
-- ¿Qué pasa cuando te faltan ingredientes? ¿Te dice cuántos faltan? ¿Tiene lista de compras?
-- ¿Cuántos pasos/taps te lleva llegar a una receta lista para cocinar?
-- ¿Qué botones o textos literales viste en pantalla?
-- ¿Tiene publicidad, suscripción paga, pantallas bloqueadas?
-- ¿Las recetas son variadas, familiares, complejas? ¿Usa gramos o tazas?)
+TAREA PRINCIPAL ANALIZADA
+Objetivo: intentar encontrar recetas compatibles con los ingredientes disponibles en el hogar y generar una lista de compras para lo faltante.
+Resultado de la tarea: parcialmente completada. La app permite ingresar ingredientes y sugerir recetas a partir del inventario, y dispone de lista de compras, pero no se observó un flujo de compra completamente optimizado ni una resolución totalmente clara del problema del stock y del faltante.
 
+RECORRIDO Y FLUJO OBSERVADO
+Paso | Acción / Tap | Texto literal / Elemento UI | Resultado / Estado | Evidencia asociada
+01   | Apertura de la aplicación | Botones principales: "Mi Despensa" y "Ver recetas"; acceso al micrófono | Pantalla principal con acceso directo a inventario y a recetas sugeridas según el stock del usuario. | screenshots/PantallaInicio-categorias-problemasVisualesConBordes-.jpeg
+02   | Activación del micrófono | Icono del micrófono | Reconocimiento de voz para incorporar ingredientes de forma rápida. La detección se describió como funcional y precisa. | screenshots/usoMicrofono.jpeg
+03   | Agregado manual de ingredientes | Categorías de ingredientes (ej.: "40 Pantry Essentials", "100 Dairy & Eggs", "100 Vegetables & Greens") | Se incorporan ingredientes del hogar a la despensa del usuario para personalizar las sugerencias. | screenshots/PantallaInicio-categorias-problemasVisualesConBordes-.jpeg
+04   | Consulta del menú | "Do you have?" / "If you had..." | La app ofrece recetas según ingredientes disponibles y también propone opciones si faltara al menos un ingrediente más. | -
+05   | Visualización de la receta | Nombre de la receta, foto, puntuación, ingredientes | Se abre la vista de detalle con la información básica de la receta y el estado de disponibilidad de ingredientes. | screenshots/receta.jpeg
+06   | Gestión de compras | Sección "Shopping list" | El usuario puede marcar los ingredientes faltantes y luego marcar los productos como comprados. | screenshots/shopingList.jpeg
+07   | Acceso a favoritos | Sección de favoritos | Requiere cuenta de usuario. No está dentro del flujo principal de búsqueda rápida para usuarios sin registro. | -
 
-[CAPTURAS SUBIDAS - CARPETA screenshots/]
-(Anotá acá el nombre de cada imagen que guardes en supercook/screenshots/ y qué representa)
-- 
+CRITERIOS DE EVALUACIÓN OBLIGATORIOS
 
---------------------------------------------------------------------------------
-[PROCESAMIENTO FORMAL Y CRITERIOS DE CÁTEDRA - A CARGO DE COPILOT]
-(Esta sección la generará Copilot en base a tus notas crudas, previa ronda de preguntas/aclaraciones)
+1. Funcionalidades:
+La aplicación está centrada en la búsqueda inversa por ingredientes disponibles. Permite activar el micrófono, incorporar ingredientes manualmente, explorar categorías, consultar recetas según inventario y gestionar una lista de compras. La función de sugerencia de recetas se adapta a lo que tiene el usuario en la cocina. La app no presenta un flujo de receta con alta personalización ni un sistema de compras integrado en profundidad más allá de la lista básica.
+
+2. Flexibilidad (ingredientes faltantes, presupuesto, conocimientos):
+- Ingredientes faltantes: la app propone recetas con base en ingredientes disponibles y recomienda variantes cuando faltan algunos elementos.
+- Presupuesto: no se observó filtro específico por costo económico o por presupuesto total del usuario.
+- Conocimientos: la app admite un usuario con poco dominio culinario y no exige conocimientos técnicos avanzados.
+- Base de la app: se asume que sal, agua y pimienta están siempre disponibles, lo cual es una decisión funcional para simplificar la búsqueda.
+
+3. Claridad del flujo principal:
+El usuario puede llegar a una receta con un recorrido breve: 1 tap para activar micrófono, 1 tap para desactivar/cerrar, 1 tap para entrar a "Ver recetas" y 1 tap para abrir la receta. La estructura principal es compatible con un objetivo de resolución rápida: detectar ingredientes -> ver recetas -> revisar faltantes -> comprar. La app no presenta tiempos de espera relevantes ni pantallas de carga prolongadas en la práctica observada.
+
+4. Lenguaje:
+El texto más relevante en la pantalla inicial es literal: "Mi Despensa" y "Ver recetas". La interfaz usa un tono directo y funcional. El micrófono aparece como una acción de entrada rápida para la carga de ingredientes. La app está disponible en muchos idiomas, incluido el español, y se registró una reseña que indicaba la necesidad de contar con más opciones de idioma.
+
+5. Calidad de las propuestas:
+La app ofrece un catálogo amplio de recetas sugeridas según ingredientes disponibles; el criterio principal es la compatibilidad con el stock doméstico. La propuesta está orientada a la resolución cotidiana y no presenta una fuerte inclinación hacia la alta cocina o la complejidad técnica. La variedad de recetas está acompañada por una lógica de disponibilidad doméstica, lo que le da consistencia para la tarea principal.
+
+6. Cómo llega el usuario:
+La aplicación se accede a través de la App Store y está disponible en múltiples idiomas. El punto de entrada es una app móvil nativa. No se observó un flujo de onboarding complejo ni una pantalla de registro bloqueante para el uso principal.
+
+7. Interfaz de usuario (UI):
+La interfaz presenta un diseño muy funcional pero visualmente desactualizado. Los botones principales quedaron muy pegados a los bordes del dispositivo, especialmente en la parte superior e inferior, y esto genera fricción al presionar elementos como el micrófono, los accesos de perfil y los controles para borrar ingredientes. La organización general es clara en términos de contenido, pero la proporción visual y la densidad de la interfaz no están alineadas con estándares modernos.
+
+8. Estados del sistema:
+La app se describe como muy liviana. En la experiencia observada, casi no hay tiempos de espera y las transiciones entre pantallas son rápidas. No se registraron loaders prolongados ni mensajes de error relevantes durante el flujo evaluado. La visibilidad del estado del sistema es básica, pero suficiente para el uso cotidiano.
+
+9. Accesibilidad:
+- Visual: la interfaz presenta contraste básico y elementos grandes; sin embargo, la presentación visual del micrófono y los controles en los bordes del teléfono reduce claridad de interacción.
+- Cognitiva: el uso de categorías por ingredientes y la lógica de "Do you have?" favorecen la comprensión para un usuario con poca experiencia culinaria.
+- Interacción: la app permite la carga por voz y por selección manual, lo que reduce la carga cognitiva. No se comprobó el uso con lector de pantalla ni con funciones de accesibilidad específicas de iOS.
+
+10. Modelo de negocio:
+La app es totalmente gratis en el acceso analizado. No se observó publicidad intrusiva ni suscripción de pago dentro del flujo principal. La sección de favoritos exige cuenta, pero la funcionalidad base no queda bloqueada por una barrera comercial.
+
+11. Cobertura y alcance:
+La aplicación cubre listas de ingredientes por categorías, métricas de disponibilidad doméstica y gestión de faltantes. Incluye colecciones diversas de ingredientes como "Pantry Essentials", "Dairy & Eggs" y "Vegetables & Greens". No se observó una adaptación importante a unidades locales de compra ni a métricas muy específicas del mercado regional, aunque sí fue útil para la lógica de despensa.
+
+12. Fortalezas observadas (hechos y evidencia):
+- El flujo de entrada por voz funciona para detectar ingredientes rápidamente (screenshot: usoMicrofono.jpeg).
+- La app organiza los ingredientes por categorías y permite registrar el inventario doméstico (screenshot: PantallaInicio-categorias-problemasVisualesConBordes-.jpeg).
+- La sección "Shopping list" permite marcar ingredientes faltantes y marcarlos luego como comprados (screenshot: shopingList.jpeg).
+- La app permite ver recetas compatibles con lo que el usuario tiene, lo que responde a la necesidad principal de la tarea analizada.
+- La experiencia se mantiene ligera y rápida en la práctica observada.
+
+13. Fricciones observadas (hechos y evidencia):
+- Los controles principales se encuentran demasiado pegados a los bordes del dispositivo, lo que dificulta la interacción táctil (screenshot: PantallaInicio-categorias-problemasVisualesConBordes-.jpeg).
+- La agrupación visual se describe como desactualizada y menos refinada que en apps contemporáneas.
+- El icono del micrófono se describió como poco claro visualmente, con una estética deficiente y poca legibilidad (screenshot: usoMicrofono.jpeg).
+- La sección de favoritos exige cuenta, lo que introduce un obstáculo para usuarios que quieren explorar sin registrarse.
+- Se registró un indicador de que la app no ha recibido actualizaciones durante 4 años, lo cual afecta la percepción de mantenimiento y continuidad.
+
+CIERRE DE TAREA
+¿Se completó la tarea?: Parcialmente. La app resuelve de manera funcional la etapa de inventario y sugerencia de recetas, pero no presenta un flujo de compra ni un nivel de refinamiento visual que permita considerarla una solución completa para el problema planteado por RecetApp.
+Cantidad total de taps observados: 1 tap para activar micrófono; 1 tap para desactivar/cerrar; 1 tap para acceder a "Ver recetas"; 1 tap para abrir una receta.
+Capturas de pantalla vinculadas en carpeta screenshots/:
+- PantallaInicio-categorias-problemasVisualesConBordes-.jpeg: muestra pantalla principal con acceso a ingredientes, micrófono y problema de bordes visuales.
+- usoMicrofono.jpeg: muestra el uso del micrófono y la detección de ingredientes por voz.
+- receta.jpeg: muestra la vista de detalle de la receta con foto, ingredientes y estado de disponibilidad.
+- shopingList.jpeg: muestra la lista de compras con marcación de faltantes y comprados.
+Aspectos no comprobados: uso con VoiceOver / lectores de pantalla de iOS, comportamiento de notificaciones push y revisión de la app en versión Android.
 
