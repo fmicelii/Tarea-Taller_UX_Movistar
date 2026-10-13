@@ -1,40 +1,26 @@
 BENCHMARK UX — SUPERCOOK
 
-Fecha y hora:
-Dispositivo / sistema operativo:
-Versión de la app o navegador:
-Idioma / región:
-Punto de entrada (App Store, web, enlace, etc.):
-Conexión / condiciones relevantes:
+[DATOS GENERALES DE LA PRUEBA]
+Dispositivo / Sistema Operativo: 
+Punto de entrada (App Store / Web / etc.): 
+Tipo de acceso (Gratis / Freemium / Suscripción / Requiere registro): 
 
-TAREA PRINCIPAL
-Objetivo: encontrar una receta que use los ingredientes disponibles e identificar qué ingredientes faltan.
-Ingredientes de prueba:
+[ZONA DE VOLCADO LIBRE / ANOTACIONES EN CRUDO]
+(Arrojá acá todo lo que fuiste viendo y experimentando sin preocuparte por el formato técnico:
+- ¿Cómo es el inicio / onboarding?
+- ¿Cómo se cargan los ingredientes que tenés en casa? (despensa, buscador, categorías, voz, etc.)
+- ¿Qué pasa cuando te faltan ingredientes? ¿Te dice cuántos faltan? ¿Tiene lista de compras?
+- ¿Cuántos pasos/taps te lleva llegar a una receta lista para cocinar?
+- ¿Qué botones o textos literales viste en pantalla?
+- ¿Tiene publicidad, suscripción paga, pantallas bloqueadas?
+- ¿Las recetas son variadas, familiares, complejas? ¿Usa gramos o tazas?)
 
-RECORRIDO (una línea por acción)
-Paso | Acción/tap | Texto literal de la interfaz | Resultado/estado | Tiempo | Captura asociada
-01   |
 
-CRITERIOS DE EVALUACIÓN
-Funcionalidades:
-Flexibilidad (ingredientes faltantes, presupuesto, conocimientos):
-Claridad del flujo principal (cantidad de pasos/taps y bloqueos):
-Lenguaje (textos literales, claridad):
-Calidad de las propuestas (coherencia, variedad, criterios observados):
-Cómo llega el usuario (descubrimiento y punto de entrada):
-Interfaz de usuario (navegación, consistencia, jerarquía observada):
-Estados del sistema (tiempos medidos, carga, éxito/error):
-Accesibilidad (contraste, tamaño, lenguaje sencillo, controles probados):
-Modelo de negocio (suscripción, pago, anuncios, límites observados):
-Cobertura y alcance (ingredientes/localización/unidades disponibles):
-Fortalezas observadas (hecho + evidencia):
-Fricciones observadas (hecho + evidencia):
+[CAPTURAS SUBIDAS - CARPETA screenshots/]
+(Anotá acá el nombre de cada imagen que guardes en supercook/screenshots/ y qué representa)
+- 
 
-CIERRE DE TAREA
-¿Se completó la tarea?:
-Resultado obtenido:
-¿Qué faltó para completarla?:
-Cantidad total de pasos/taps:
-Tiempo total medido:
-Capturas: guardar en screenshots/ e indicar nombres arriba.
-Aspectos no comprobados (no inferir):
+--------------------------------------------------------------------------------
+[PROCESAMIENTO FORMAL Y CRITERIOS DE CÁTEDRA - A CARGO DE COPILOT]
+(Esta sección la generará Copilot en base a tus notas crudas, previa ronda de preguntas/aclaraciones)
+

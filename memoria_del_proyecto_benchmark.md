@@ -76,3 +76,8 @@ Al momento de procesar los `.txt` para pasarlos al HTML final, **Copilot debe re
    * **Cobertura y alcance:** Localización de ingredientes, métricas (gramos/tazas), etc.
 
    * **Fortalezas y Debilidades.**
+
+5. **Detección de Inconsistencias y Validación Proactiva (Rol de Copilot):**
+   * El usuario volcará sus anotaciones y observaciones en crudo en los archivos `anotaciones.txt` y subirá capturas a la carpeta `screenshots/`.
+   * Copilot se encargará de estructurar la información, eliminar subjetividades y formalizar el análisis técnico.
+   * **Regla estricta:** Si Copilot detecta vacíos de información, contradicciones, inconsistencias entre las capturas y los textos, o necesita cuantificar métricas específicas (precios exactos, textos literales de botones, conteo de taps), **DEBE frenar y hacerle preguntas puntuales al usuario** antes de asumir datos o pasarlos a la tabla comparativa final.
