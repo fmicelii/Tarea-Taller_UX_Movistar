@@ -1,0 +1,40 @@
+BENCHMARK UX — COOKPAD
+
+Fecha y hora:
+Dispositivo / sistema operativo:
+Versión de la app o navegador:
+Idioma / región:
+Punto de entrada (App Store, web, enlace, etc.):
+Conexión / condiciones relevantes:
+
+TAREA PRINCIPAL
+Objetivo: encontrar una receta que use los ingredientes disponibles e identificar qué ingredientes faltan.
+Ingredientes de prueba:
+
+RECORRIDO (una línea por acción)
+Paso | Acción/tap | Texto literal de la interfaz | Resultado/estado | Tiempo | Captura asociada
+01   |
+
+CRITERIOS DE EVALUACIÓN
+Funcionalidades:
+Flexibilidad (ingredientes faltantes, presupuesto, conocimientos):
+Claridad del flujo principal (cantidad de pasos/taps y bloqueos):
+Lenguaje (textos literales, claridad):
+Calidad de las propuestas (coherencia, variedad, criterios observados):
+Cómo llega el usuario (descubrimiento y punto de entrada):
+Interfaz de usuario (navegación, consistencia, jerarquía observada):
+Estados del sistema (tiempos medidos, carga, éxito/error):
+Accesibilidad (contraste, tamaño, lenguaje sencillo, controles probados):
+Modelo de negocio (suscripción, pago, anuncios, límites observados):
+Cobertura y alcance (ingredientes/localización/unidades disponibles):
+Fortalezas observadas (hecho + evidencia):
+Fricciones observadas (hecho + evidencia):
+
+CIERRE DE TAREA
+¿Se completó la tarea?:
+Resultado obtenido:
+¿Qué faltó para completarla?:
+Cantidad total de pasos/taps:
+Tiempo total medido:
+Capturas: guardar en screenshots/ e indicar nombres arriba.
+Aspectos no comprobados (no inferir):

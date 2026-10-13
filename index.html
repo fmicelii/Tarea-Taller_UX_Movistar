@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Benchmark UX de Supercook, Cookpad y Gronda para el proyecto RecetApp.">
+  <title>Benchmark de recetas | RecetApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="RecetApp, inicio">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span>RecetApp <span class="brand-subtitle">/ Benchmark UX</span></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#comparativa">Comparativa</a>
+        <a href="#evidencia">Evidencia</a>
+        <a href="#metodo">Método</a>
+        <a href="#hallazgos">Hallazgos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Taller UX · Accesibilidad · Inteligencia Artificial</p>
+      <h1 id="page-title">¿Qué puedo cocinar<br><span>con lo que tengo?</span></h1>
+      <p class="hero-copy">Benchmark de experiencias de recetas para identificar evidencia, patrones y oportunidades de diseño para RecetApp.</p>
+      <div class="hero-meta">
+        <span><span class="status-dot" aria-hidden="true"></span> Investigación en curso</span>
+        <span>3 aplicaciones seleccionadas</span>
+      </div>
+      <a class="text-link" href="#comparativa">Explorar criterios <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="apps-section" aria-labelledby="apps-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / Muestra</p>
+          <h2 id="apps-title">Aplicaciones analizadas</h2>
+        </div>
+        <p>La selección permite observar distintos enfoques de búsqueda, comunidad y presentación de recetas.</p>
+      </div>
+      <div class="app-cards">
+        <article class="app-card">
+          <span class="app-index">APP 01</span>
+          <h3>Supercook</h3>
+          <p>Búsqueda de recetas a partir de los ingredientes disponibles.</p>
+          <span class="app-focus">Enfoque · Ingredientes</span>
+        </article>
+        <article class="app-card">
+          <span class="app-index">APP 02</span>
+          <h3>Cookpad</h3>
+          <p>Recetas compartidas por una comunidad amplia de usuarios.</p>
+          <span class="app-focus">Enfoque · Comunidad</span>
+        </article>
+        <article class="app-card">
+          <span class="app-index">APP 03</span>
+          <h3>Gronda</h3>
+          <p>Recetas de alta calidad visual, técnicas culinarias y suscripción.</p>
+          <span class="app-focus">Enfoque · Contenido visual</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="comparison-section" id="comparativa" aria-labelledby="comparison-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / Evaluación</p>
+          <h2 id="comparison-title">Tabla comparativa</h2>
+        </div>
+        <p>Completar cada celda con observaciones comprobables y su evidencia. Lo no observado queda explícitamente pendiente.</p>
+      </div>
+      <div class="table-wrap" role="region" aria-label="Tabla comparativa; desplazar horizontalmente para ver todas las aplicaciones" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Criterio</th>
+              <th scope="col">Supercook</th>
+              <th scope="col">Cookpad</th>
+              <th scope="col">Gronda</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Funcionalidades</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>Exploración en feed temático continuo, filtros por parámetros técnicos culinarios (complejidad, técnica, tiempo, dieta), visualización de video introductorio y pasos, ajuste dinámico de porciones, interacción mediante botón "Ask AI", notas privadas por receta, guardado en colecciones y funciones sociales (perfil, seguidores, publicaciones propias). Carece de registro de despensa propia y generador de lista de compras.</td>
+            </tr>
+            <tr>
+              <th scope="row">Flexibilidad</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>No reordena ni sugiere recetas según ingredientes disponibles del usuario. La adaptación de ingredientes faltantes y equipamiento se delega a interacción conversacional con el botón "Ask AI". No dispone de filtros ni cálculo por presupuesto económico.</td>
+            </tr>
+            <tr>
+              <th scope="row">Claridad del flujo principal</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>2 taps para acceder a una receta (tap en tarjeta del feed o resultado de búsqueda + scroll vertical). Jerarquía estructurada: video de cabecera → perfil del plato → selector de porciones → lista de ingredientes → pasos numerados. No presenta bloqueos publicitarios durante la lectura.</td>
+            </tr>
+            <tr>
+              <th scope="row">Lenguaje</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>Terminología técnica gastronómica y profesional (técnicas de cocción, temperaturas, equipamiento de cocina). Llamadas a la acción directas (botón literal "Ask AI"). Tono formal orientado al ámbito profesional culinario.</td>
+            </tr>
+            <tr>
+              <th scope="row">Calidad de las propuestas</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>Catálogo registrado de 47.000 recetas, enfocado en preparaciones gastronómicas de autor (ejemplo: pan de mango). Cero o nula presencia de preparaciones de consumo masivo o tradicionales básicas (búsqueda de "medialunas" no arroja resultados). Cobertura audiovisual y fotográfica en alta resolución por receta.</td>
+            </tr>
+            <tr>
+              <th scope="row">Cómo llega el usuario</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>Distribución por tiendas de aplicaciones (App Store / Google Play). Promoción a través de anuncios digitales (Ads) y tracción de figuras gastronómicas profesionales ("influencers chefs").</td>
+            </tr>
+            <tr>
+              <th scope="row">Interfaz de usuario</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>Paleta en tonos neutros con espaciado amplio y énfasis en material multimedia. Barra de navegación inferior fija para acceso a secciones clave. Jerarquía tipográfica diferenciada entre cantidades métricas, títulos e instrucciones.</td>
+            </tr>
+            <tr>
+              <th scope="row">Estados del sistema</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>Transiciones inmediatas entre vistas. Recálculo numérico instantáneo de cantidades al tocar el selector de porciones. Estado de procesamiento visual explícito en el asistente "Ask AI" previo a responder.</td>
+            </tr>
+            <tr>
+              <th scope="row">Accesibilidad</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>Tipografía sans-serif con alto contraste respecto al fondo. Botones y controles táctiles con áreas de toque estándar. Complejidad léxica elevada (vocabulario profesional gastronómico). Videos introductorios sin audiodescripción explícita ni subtítulos nativos configurables. Compatibilidad con VoiceOver no verificada.</td>
+            </tr>
+            <tr>
+              <th scope="row">Modelo de negocio</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>Suscripción de pago (Gronda Pro) con 7 días de prueba gratuita. Tarifa observada: 3,33 USD/mes con pago anual de 39,99 USD/año. El plan gratuito bloquea el acceso a recetas Pro y deshabilita la asistencia por IA ("Ask AI") al vencer el período de prueba.</td>
+            </tr>
+            <tr>
+              <th scope="row">Cobertura y alcance</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>Unidades en sistema métrico internacional (gramos, mililitros). Nombres de ingredientes sin adaptación a regionalismos locales; requiere sustitución manual o consulta interactiva mediante el botón "Ask AI".</td>
+            </tr>
+            <tr>
+              <th scope="row">Fortalezas observadas</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>Escalado cuantitativo instantáneo de ingredientes según número de porciones. Asistente con IA integrado ("Ask AI") para sugerir sustituciones y adaptación de equipamiento sin salir de la receta. Contenido audiovisual de apertura y desglose de perfil de sabor. Notas privadas por receta.</td>
+            </tr>
+            <tr>
+              <th scope="row">Fricciones observadas</th>
+              <td>Pendiente de relevar</td>
+              <td>Pendiente de relevar</td>
+              <td>No permite buscar a partir de los ingredientes disponibles en el hogar (incompatible con el objetivo de "cocinar con lo que tengo"). Ausencia total de función de lista de compras para ingredientes faltantes. Catálogo restringido a cocina de autor sin opciones para comidas simples cotidianas. Funcionalidades clave sujetas a paywall tras 7 días.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note"><span aria-hidden="true">↳</span> En celular, desplazá la tabla horizontalmente para consultar las tres aplicaciones.</p>
+    </section>
+
+    <section class="evidence-section" id="evidencia" aria-labelledby="evidence-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">03 / Evidencia Visual</p>
+          <h2 id="evidence-title">Capturas y análisis de interfaz</h2>
+        </div>
+        <p>Registro visual de elementos clave, componentes de interacción y fricciones detectadas en las aplicaciones relevadas.</p>
+      </div>
+
+      <div class="evidence-app-block">
+        <div class="evidence-app-header">
+          <span class="app-index">APP 03</span>
+          <h3>Gronda · Evidencia relevada</h3>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <div class="img-container">
+              <img src="gronda/screenshots/botonPorciones-botonIA.jpeg" alt="Detalle de receta en Gronda mostrando el selector de porciones y el botón Ask AI" loading="lazy">
+            </div>
+            <figcaption>
+              <strong>Selector de porciones y botón "Ask AI"</strong>
+              <span>El selector numérico recalcula automáticamente el gramaje de los ingredientes al cambiar las porciones. El botón literal "Ask AI" abre un asistente conversacional para solicitar sustituciones de ingredientes o adaptación a equipamiento casero.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <div class="img-container">
+              <img src="gronda/screenshots/videoIntroduccion-perfilUsuario.jpeg" alt="Cabecera de receta en Gronda con video introductorio y datos del chef autor" loading="lazy">
+            </div>
+            <figcaption>
+              <strong>Video introductorio y perfil del creador</strong>
+              <span>Al abrir una receta se despliega una cabecera audiovisual con un video corto de técnica culinaria, enlace directo al perfil del autor y perfil organoléptico (atributos de sabor).</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <div class="img-container">
+              <img src="gronda/screenshots/perfilUsuario.jpeg" alt="Pantalla de perfil de usuario en Gronda con seguidores, colecciones y recetas publicadas" loading="lazy">
+            </div>
+            <figcaption>
+              <strong>Perfil de usuario con dinámica de red social</strong>
+              <span>Estructura de perfil con métricas públicas de seguidores, 'likes', colecciones creadas, recetas publicadas, sección 'About me', botón de contacto y opción para suscribirse al autor.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <div class="img-container">
+              <img src="gronda/screenshots/sinVariedad.jpeg" alt="Búsqueda en Gronda que evidencia falta de resultados para recetas cotidianas populares" loading="lazy">
+            </div>
+            <figcaption>
+              <strong>Búsqueda orientada a alta cocina sin opciones cotidianas</strong>
+              <span>Al buscar términos de consumo masivo o tradicionales como 'medialunas', el sistema no arroja resultados. El catálogo de 47.000 recetas se concentra en cocina de autor y técnicas especializadas.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section" id="metodo" aria-labelledby="method-title">
+      <div class="method-intro">
+        <p class="eyebrow">04 / Protocolo</p>
+        <h2 id="method-title">Una tarea, evidencia concreta</h2>
+        <p>Observar el recorrido de una persona que busca una receta con ingredientes disponibles y necesita identificar qué le falta.</p>
+      </div>
+      <ol class="method-steps">
+        <li><span>01</span><div><h3>Definir el contexto</h3><p>Anotar dispositivo, versión, idioma/región y punto de entrada.</p></div></li>
+        <li><span>02</span><div><h3>Registrar el recorrido</h3><p>Contar pasos y taps, medir tiempos y copiar los textos de interfaz literalmente.</p></div></li>
+        <li><span>03</span><div><h3>Guardar evidencia</h3><p>Asociar capturas a cada observación; marcar claramente lo que no se pudo verificar.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="findings-section" id="hallazgos" aria-labelledby="findings-title">
+      <p class="eyebrow">05 / Síntesis</p>
+      <h2 id="findings-title">Hallazgos para RecetApp</h2>
+      <div class="finding-grid">
+        <article>
+          <span class="finding-label">Patrones compartidos</span>
+          <p>Pendiente de relevar en las tres aplicaciones.</p>
+        </article>
+        <article>
+          <span class="finding-label">Oportunidades</span>
+          <p>Pendiente de contrastar con la evidencia recopilada.</p>
+        </article>
+        <article>
+          <span class="finding-label">Implicancias de diseño</span>
+          <p>Pendiente de derivar de los hallazgos observados.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>RecetApp · Benchmark UX</span>
+    <span>UTN.BA · Taller UX, Accesibilidad e Inteligencia Artificial</span>
+  </footer>
+</body>
+</html>

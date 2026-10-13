@@ -1,0 +1,82 @@
+BENCHMARK UX — GRONDA
+
+Dispositivo / sistema operativo: iOS
+Punto de entrada: App Store
+Conexión / condiciones relevantes: Modelo de suscripción con período de prueba gratuito de 7 días (Free trial). Requiere creación de cuenta de usuario.
+
+TAREA PRINCIPAL ANALIZADA
+Objetivo: Intentar encontrar una receta a partir de los ingredientes disponibles en el hogar y generar una lista de compras de lo faltante.
+Resultado de la tarea: No completada dentro del flujo nativo. La aplicación no cuenta con un buscador inverso de recetas por despensa/ingredientes disponibles ni dispone de generador de lista de compras.
+
+RECORRIDO Y FLUJO OBSERVADO
+Paso | Acción / Tap | Texto literal / Elemento UI | Resultado / Estado | Evidencia asociada
+01   | Acceso inicial a la aplicación tras registro | Pestañas inferiores de navegación | Despliegue de pantalla Home ("Feed") con scroll vertical continuo. Bloques temáticos ("Lo mejor de Pastas", "Lo mejor de Panes", etc.). | screenshots/videoIntroduccion-perfilUsuario.jpeg
+02   | Tap en icono de búsqueda | Barra de búsqueda con filtros ("Complexity", "Type of dish", "Method", "Time", "Diet") | Filtros estructurados por categorías culinarias. No incluye campo para listar ingredientes que el usuario tiene en su cocina. | screenshots/sinVariedad.jpeg
+03   | Selección de una receta desde el Feed/Buscador | Tarjeta de receta con fotografía | Apertura de vista de detalle: reproducción automática de video introductorio en cabecera, ficha de perfil organoléptico (picante, salado, etc.) y especificaciones técnicas. | screenshots/videoIntroduccion-perfilUsuario.jpeg
+04   | Ajuste de comensales/porciones | Selector numérico de porciones | Recálculo dinámico y automático de los gramajes y cantidades en la lista de ingredientes. | screenshots/botonPorciones-botonIA.jpeg
+05   | Consulta de adaptación / sustitución | Botón literal "Ask AI" | Apertura de interfaz de chat con asistente de IA para solicitar cambio de equipamiento técnico, versión casera o sustitución de ingredientes faltantes. | screenshots/botonPorciones-botonIA.jpeg
+06   | Personalización de la receta | Botón para notas privadas | Campo de texto individual visible únicamente para el usuario autenticado para registrar modificaciones personales. | -
+07   | Inspección de perfil y funciones comunitarias | Pestaña de perfil | Interfaz de red social con contador de seguidores/seguidos, colecciones de recetas guardadas y opción de publicar recetas propias. | screenshots/perfilUsuario.jpeg
+
+CRITERIOS DE EVALUACIÓN OBLIGATORIOS
+
+1. Funcionalidades:
+Plataforma de recetas de alta cocina combinada con red social vertical. Permite explorar recetas en un feed continuo, filtrar por parámetros técnicos (tiempo, método, complejidad, dieta), reproducir videos de técnicas, ajustar porciones dinámicamente, interactuar con un asistente conversacional vía botón "Ask AI", añadir notas privadas, guardar colecciones temáticas, publicar recetas y seguir a otros usuarios/chefs. Carece de herramienta para registrar stock de despensa o exportar listas de compras.
+
+2. Flexibilidad (ingredientes faltantes, presupuesto, conocimientos):
+- Ingredientes faltantes: La app no reordena recetas según lo que el usuario tiene disponible. La sustitución de ingredientes se delega exclusivamente a la interacción manual con el botón "Ask AI".
+- Presupuesto: No contiene filtros ni indicadores de costo económico por plato.
+- Conocimientos: Orientada a técnicas culinarias avanzadas. Incluye perfiles de sabor (salado, picante, etc.) y cursos estructurados por clases, pero la mayoría de las recetas asumen equipamiento gastronómico y dominio técnico.
+
+3. Claridad del flujo principal:
+El acceso a la visualización de una receta requiere 2 taps desde la Home (tap en tarjeta de receta + scroll vertical para visualizar ingredientes). La jerarquía interna de la receta está estructurada en: Cabecera audiovisual -> Perfil del plato -> Selector de porciones -> Lista de ingredientes con cantidades exactas -> Pasos secuenciales de preparación. No hay desvíos publicitarios intrusivos durante la lectura.
+
+4. Lenguaje:
+Terminología gastronómica técnica y profesional (métodos de cocción, temperaturas, equipamiento específico). Botones y llamadas a la acción directos y concisos (ejemplo literal: "Ask AI"). Tono formal orientado al ámbito profesional culinario.
+
+5. Calidad de las propuestas:
+Catálogo reportado de 47.000 recetas, enfocado en preparaciones complejas de autor (ejemplo: pan de mango frente a productos estándar de panadería). Alto estándar visual fotográfico y audiovisual por receta. Cobertura reducida de recetas de resolución inmediata con ingredientes básicos o tradicionales de consumo masivo regional.
+
+6. Cómo llega el usuario:
+Distribución principal a través de tiendas oficiales (App Store / Google Play). Captación mediante campañas de publicidad digital (Ads) y presencia de marca a través de chefs profesionales asociados ("influencers culinarios").
+
+7. Interfaz de usuario (UI):
+Diseño con predominio de fondos neutros, espaciado amplio y prioridad al contenido audiovisual en alta definición. Barra de navegación inferior fija para acceso a secciones principales. Jerarquía tipográfica con distinción clara entre títulos, datos métricos de ingredientes e instrucciones de preparación.
+
+8. Estados del sistema:
+Transiciones fluidas entre vistas sin pantallas de carga intermedias prolongadas. Respuestas inmediatas al modificar el selector numérico de porciones. El módulo conversacional "Ask AI" presenta estado de procesamiento visible previo a generar la respuesta de sustitución.
+
+9. Accesibilidad:
+- Visual: Textos principales con alto contraste sobre fondo neutro. Tipografía legible. Carencia de descripciones auditivas o etiquetas explícitas de accesibilidad en los videos de presentación.
+- Cognitiva: Complejidad léxica alta; requiere comprensión de jerga culinaria y unidades de precisión.
+- Interacción: Controles táctiles y botones de tamaño estándar con áreas de toque delimitadas.
+
+10. Modelo de negocio:
+Suscripción paga (Gronda Pro) con un período de prueba gratuito de 7 días (Free trial).
+- Tarifas vigentes observadas: 3,33 USD/mes con facturación anual (39,99 USD al año).
+- Restricciones de la versión gratuita: Bloqueo de recetas catalogadas como Pro y deshabilitación del asistente "Ask AI" tras finalizar la prueba.
+
+11. Cobertura y alcance:
+Uso de sistema métrico internacional estandarizado (gramos, mililitros). Adaptación local de nombres de ingredientes limitada (terminología culinaria internacional o de cocina europea). Dependencia del usuario o de la consulta al chatbot para adaptar ingredientes no disponibles en el mercado local.
+
+12. Fortalezas observadas (hechos y evidencia):
+- Escalado numérico automático de ingredientes al modificar el número de porciones (screenshot: botonPorciones-botonIA.jpeg).
+- Integración de asistencia por inteligencia artificial mediante el botón "Ask AI" para adaptar ingredientes y equipamiento sin abandonar la receta (screenshot: botonPorciones-botonIA.jpeg).
+- Incorporación de video técnico de corta duración y ficha de perfil de sabor en la cabecera de cada receta (screenshot: videoIntroduccion-perfilUsuario.jpeg).
+- Sistema de notas privadas que permite guardar modificaciones personalizadas por plato.
+
+13. Fricciones observadas (hechos y evidencia):
+- Inexistencia de búsqueda inversa por ingredientes disponibles en el hogar; no resuelve el problema de "cocinar con lo que hay en casa".
+- Ausencia de módulo de lista de compras para los ingredientes faltantes.
+- Catálogo no enfocado en soluciones cotidianas: escasez de recetas con ingredientes convencionales de alacena (screenshot: sinVariedad.jpeg).
+- Acceso a recetas completas y a la herramienta "Ask AI" condicionado a una barrera de pago (paywall de 3,33 USD/mes) tras 7 días.
+
+CIERRE DE TAREA
+¿Se completó la tarea?: No. Gronda no cuenta con la función de buscar a partir de una lista de ingredientes propios ni exportar una lista de compras.
+Cantidad total de taps observados: 2 taps para abrir una receta; 1 tap para el selector de porciones; 1 tap para consultar al botón "Ask AI".
+Capturas de pantalla vinculadas en carpeta screenshots/:
+- botonPorciones-botonIA.jpeg: Muestra selector interactivo de porciones y botón literal "Ask AI".
+- videoIntroduccion-perfilUsuario.jpeg: Muestra cabecera multimedia con video y ficha de la receta.
+- perfilUsuario.jpeg: Muestra estructura de perfil social, métricas de seguidores y colecciones.
+- sinVariedad.jpeg: Muestra resultados orientados a preparaciones gastronómicas de autor y filtros por técnica.
+Aspectos no comprobados: Comportamiento con lectores de pantalla de iOS (VoiceOver) no verificado en esta sesión.
